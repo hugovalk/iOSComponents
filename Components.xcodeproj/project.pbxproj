@@ -13,6 +13,12 @@
 		5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5981213814F583EF003A7E9F /* InfoPlist.strings */; };
 		5981213C14F583EF003A7E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213B14F583EF003A7E9F /* main.m */; };
 		5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213F14F583EF003A7E9F /* HVAppDelegate.m */; };
+		5981215214F593DF003A7E9F /* HVNumberPadWithDoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */; };
+		5981215314F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */; };
+		5981215A14F593F0003A7E9F /* DoneDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215614F593F0003A7E9F /* DoneDown.png */; };
+		5981215B14F593F0003A7E9F /* DoneDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215714F593F0003A7E9F /* DoneDown3.png */; };
+		5981215C14F593F0003A7E9F /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215814F593F0003A7E9F /* DoneUp.png */; };
+		5981215D14F593F0003A7E9F /* DoneUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215914F593F0003A7E9F /* DoneUp3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		5981213D14F583EF003A7E9F /* Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Components-Prefix.pch"; sourceTree = "<group>"; };
 		5981213E14F583EF003A7E9F /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
 		5981213F14F583EF003A7E9F /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		5981214E14F593DF003A7E9F /* HVNumberPadWithDoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneButton.h; sourceTree = "<group>"; };
+		5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNumberPadWithDoneButton.m; sourceTree = "<group>"; };
+		5981215014F593DF003A7E9F /* HVNumberPadWithDoneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneDelegate.h; sourceTree = "<group>"; };
+		5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNumberPadWithDoneDelegate.m; sourceTree = "<group>"; };
+		5981215614F593F0003A7E9F /* DoneDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown.png; sourceTree = "<group>"; };
+		5981215714F593F0003A7E9F /* DoneDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown3.png; sourceTree = "<group>"; };
+		5981215814F593F0003A7E9F /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp.png; sourceTree = "<group>"; };
+		5981215914F593F0003A7E9F /* DoneUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,8 @@
 		5981213514F583EF003A7E9F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5981215414F593F0003A7E9F /* Resources */,
+				5981214C14F593DF003A7E9F /* Classes */,
 				5981213E14F583EF003A7E9F /* HVAppDelegate.h */,
 				5981213F14F583EF003A7E9F /* HVAppDelegate.m */,
 				5981213614F583EF003A7E9F /* Supporting Files */,
@@ -88,6 +104,44 @@
 				5981213D14F583EF003A7E9F /* Components-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5981214C14F593DF003A7E9F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5981214D14F593DF003A7E9F /* HVNumberPadWithDone */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5981214D14F593DF003A7E9F /* HVNumberPadWithDone */ = {
+			isa = PBXGroup;
+			children = (
+				5981214E14F593DF003A7E9F /* HVNumberPadWithDoneButton.h */,
+				5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */,
+				5981215014F593DF003A7E9F /* HVNumberPadWithDoneDelegate.h */,
+				5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */,
+			);
+			path = HVNumberPadWithDone;
+			sourceTree = "<group>";
+		};
+		5981215414F593F0003A7E9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5981215514F593F0003A7E9F /* HVNumberPadWithDone */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5981215514F593F0003A7E9F /* HVNumberPadWithDone */ = {
+			isa = PBXGroup;
+			children = (
+				5981215614F593F0003A7E9F /* DoneDown.png */,
+				5981215714F593F0003A7E9F /* DoneDown3.png */,
+				5981215814F593F0003A7E9F /* DoneUp.png */,
+				5981215914F593F0003A7E9F /* DoneUp3.png */,
+			);
+			path = HVNumberPadWithDone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +196,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */,
+				5981215A14F593F0003A7E9F /* DoneDown.png in Resources */,
+				5981215B14F593F0003A7E9F /* DoneDown3.png in Resources */,
+				5981215C14F593F0003A7E9F /* DoneUp.png in Resources */,
+				5981215D14F593F0003A7E9F /* DoneUp3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +212,8 @@
 			files = (
 				5981213C14F583EF003A7E9F /* main.m in Sources */,
 				5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */,
+				5981215214F593DF003A7E9F /* HVNumberPadWithDoneButton.m in Sources */,
+				5981215314F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
