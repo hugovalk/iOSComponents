@@ -8,6 +8,11 @@
 
 #import "HVMainViewController.h"
 
+enum ROWS {
+    NUMBER_PAD_DONE_BUTTON,
+    NUMBER_OF_ROWS
+};
+
 @interface HVMainViewController ()
 
 @end
@@ -50,16 +55,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return NUMBER_OF_ROWS;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
