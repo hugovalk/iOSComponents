@@ -20,10 +20,5 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	[doneDelegate release];
-	[super dealloc];
-}
 
 @end

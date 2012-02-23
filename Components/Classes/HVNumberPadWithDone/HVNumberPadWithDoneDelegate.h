@@ -16,7 +16,7 @@
 	UITextField* textField;
 }
 
-@property (nonatomic, retain) UITextField *textField;
+@property (nonatomic) UITextField *textField;
 
 -(id) initWithTextfield:(UITextField*)tf;
 

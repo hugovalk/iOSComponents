@@ -61,7 +61,6 @@
 		[doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
 	}
 	[doneButton addTarget:self action:@selector(doneClicked:) forControlEvents:UIControlEventTouchUpInside];
-	[doneButton retain];
 }
 
 #pragma mark -
@@ -94,7 +93,5 @@
 -(void)dealloc
 {
 	[doneButton removeFromSuperview];
-	[doneButton release];
-	[super dealloc];
 }
 @end

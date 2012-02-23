@@ -11,14 +11,15 @@
 		5981213214F583EF003A7E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981213114F583EF003A7E9F /* Foundation.framework */; };
 		5981213414F583EF003A7E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981213314F583EF003A7E9F /* CoreGraphics.framework */; };
 		5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5981213814F583EF003A7E9F /* InfoPlist.strings */; };
-		5981213C14F583EF003A7E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213B14F583EF003A7E9F /* main.m */; };
-		5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213F14F583EF003A7E9F /* HVAppDelegate.m */; };
+		5981213C14F583EF003A7E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213B14F583EF003A7E9F /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213F14F583EF003A7E9F /* HVAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5981215214F593DF003A7E9F /* HVNumberPadWithDoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */; };
 		5981215314F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */; };
 		5981215A14F593F0003A7E9F /* DoneDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215614F593F0003A7E9F /* DoneDown.png */; };
 		5981215B14F593F0003A7E9F /* DoneDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215714F593F0003A7E9F /* DoneDown3.png */; };
 		5981215C14F593F0003A7E9F /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215814F593F0003A7E9F /* DoneUp.png */; };
 		5981215D14F593F0003A7E9F /* DoneUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5981215914F593F0003A7E9F /* DoneUp3.png */; };
+		5981216014F613A2003A7E9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5981215F14F613A2003A7E9F /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,8 @@
 		5981213914F583EF003A7E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5981213B14F583EF003A7E9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5981213D14F583EF003A7E9F /* Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Components-Prefix.pch"; sourceTree = "<group>"; };
-		5981213E14F583EF003A7E9F /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
-		5981213F14F583EF003A7E9F /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		5981213E14F583EF003A7E9F /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HVAppDelegate.h; path = ../HVAppDelegate.h; sourceTree = "<group>"; };
+		5981213F14F583EF003A7E9F /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HVAppDelegate.m; path = ../HVAppDelegate.m; sourceTree = "<group>"; };
 		5981214E14F593DF003A7E9F /* HVNumberPadWithDoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneButton.h; sourceTree = "<group>"; };
 		5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNumberPadWithDoneButton.m; sourceTree = "<group>"; };
 		5981215014F593DF003A7E9F /* HVNumberPadWithDoneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		5981215714F593F0003A7E9F /* DoneDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown3.png; sourceTree = "<group>"; };
 		5981215814F593F0003A7E9F /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp.png; sourceTree = "<group>"; };
 		5981215914F593F0003A7E9F /* DoneUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp3.png; sourceTree = "<group>"; };
+		5981215F14F613A2003A7E9F /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = UI/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,9 @@
 		5981213514F583EF003A7E9F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5981215E14F6134F003A7E9F /* UI */,
 				5981215414F593F0003A7E9F /* Resources */,
 				5981214C14F593DF003A7E9F /* Classes */,
-				5981213E14F583EF003A7E9F /* HVAppDelegate.h */,
-				5981213F14F583EF003A7E9F /* HVAppDelegate.m */,
 				5981213614F583EF003A7E9F /* Supporting Files */,
 			);
 			path = Components;
@@ -109,6 +110,7 @@
 		5981214C14F593DF003A7E9F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5981216114F61407003A7E9F /* Main */,
 				5981214D14F593DF003A7E9F /* HVNumberPadWithDone */,
 			);
 			path = Classes;
@@ -142,6 +144,23 @@
 				5981215914F593F0003A7E9F /* DoneUp3.png */,
 			);
 			path = HVNumberPadWithDone;
+			sourceTree = "<group>";
+		};
+		5981215E14F6134F003A7E9F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5981215F14F613A2003A7E9F /* MainWindow.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		5981216114F61407003A7E9F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5981213E14F583EF003A7E9F /* HVAppDelegate.h */,
+				5981213F14F583EF003A7E9F /* HVAppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +219,7 @@
 				5981215B14F593F0003A7E9F /* DoneDown3.png in Resources */,
 				5981215C14F593F0003A7E9F /* DoneUp.png in Resources */,
 				5981215D14F593F0003A7E9F /* DoneUp3.png in Resources */,
+				5981216014F613A2003A7E9F /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
