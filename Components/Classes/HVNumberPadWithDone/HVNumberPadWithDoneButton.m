@@ -26,8 +26,6 @@
 
 @implementation HVNumberPadWithDoneButton
 
-
-
 - (id)initWithFrame:(CGRect)frame
 {
 	if (self = [super initWithFrame:frame]) {
@@ -54,5 +52,9 @@
     }
 }
 
+- (void)setTitleText:(NSString *)title
+{
+    doneDelegate.titleText = title;
+}
 
 @end

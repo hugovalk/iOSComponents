@@ -26,4 +26,6 @@
 	HVNumberPadWithDoneDelegate *doneDelegate;
 }
 
+- (void)setTitleText:(NSString *)title;
+
 @end

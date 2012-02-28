@@ -29,8 +29,9 @@
 	UITextField* textField;
 }
 
-@property (nonatomic) UITextField *textField;
+@property (strong, nonatomic) UITextField *textField;
+@property (strong, nonatomic) NSString *titleText;
 
--(id) initWithTextfield:(UITextField*)tf text:(NSString*)txt;
+-(id) initWithTextfield:(UITextField*)tf;
 
 @end

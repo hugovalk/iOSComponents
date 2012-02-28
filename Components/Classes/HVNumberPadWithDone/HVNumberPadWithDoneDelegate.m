@@ -37,13 +37,13 @@
 @implementation HVNumberPadWithDoneDelegate
 
 @synthesize textField;
+@synthesize titleText;
 
 #pragma mark - Initialize
--(id) initWithTextfield:(UITextField*)tf text:(NSString*)txt
+-(id) initWithTextfield:(UITextField*)tf 
 {
 	if (self = [super init]) {
-		self.textField = tf;	
-        text = txt;
+		self.textField = tf;
     }
 	return self;
 }
@@ -82,7 +82,16 @@
     [doneButton.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
     
     // Set text.
-    [doneButton setTitle:@"Done" forState:UIControlStateNormal];
+    [doneButton setTitle:[self buttonText] forState:UIControlStateNormal];
+}
+
+- (NSString *)buttonText
+{
+    if (self.titleText == nil) {
+        return @"Done";
+    } else {
+        return titleText;
+    }
 }
 
 #pragma mark - Handle Done button clicked event
@@ -95,6 +104,7 @@
 #pragma mark - UITextFieldDelegate
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField
 {
+    [doneButton setTitle:[self buttonText] forState:UIControlStateNormal];
 	[NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(startAddingButton) userInfo:nil repeats:NO];
 	return YES;
 }
