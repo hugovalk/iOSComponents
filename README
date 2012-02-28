@@ -16,5 +16,7 @@ limitations under the License.
 
 This project stores the reusable components that I might want to reuse in future projects. The components that are included here are free for everyone to reuse.
 
+The project (at this moment) requires iOS 4.3 at minimum. Components are generally tested in the simulator and on a latest iOS iPhone. 
+
 The whole project falls under the Apache License, Version 2.0. 
  
