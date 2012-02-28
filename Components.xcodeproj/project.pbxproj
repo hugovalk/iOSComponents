@@ -13,12 +13,12 @@
 		5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5981213814F583EF003A7E9F /* InfoPlist.strings */; };
 		5981213C14F583EF003A7E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213B14F583EF003A7E9F /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213F14F583EF003A7E9F /* HVAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5981215214F593DF003A7E9F /* HVNumberPadWithDoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */; };
-		5981215314F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */; };
 		5981216014F613A2003A7E9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5981215F14F613A2003A7E9F /* MainWindow.xib */; };
 		5981216414F6196F003A7E9F /* HVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981216314F6196F003A7E9F /* HVMainViewController.m */; };
 		5981216B14F694A6003A7E9F /* HVNPwithDoneExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981216914F694A6003A7E9F /* HVNPwithDoneExampleViewController.m */; };
 		5981216C14F694A6003A7E9F /* HVNPwithDoneExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5981216A14F694A6003A7E9F /* HVNPwithDoneExampleViewController.xib */; };
+		59D6E35314FD637B003EC963 /* HVNumberPadWithDoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D6E35014FD637A003EC963 /* HVNumberPadWithDoneButton.m */; };
+		59D6E35414FD637B003EC963 /* HVNumberPadWithDoneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D6E35214FD637B003EC963 /* HVNumberPadWithDoneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +32,16 @@
 		5981213D14F583EF003A7E9F /* Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Components-Prefix.pch"; sourceTree = "<group>"; };
 		5981213E14F583EF003A7E9F /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HVAppDelegate.h; path = ../HVAppDelegate.h; sourceTree = "<group>"; };
 		5981213F14F583EF003A7E9F /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HVAppDelegate.m; path = ../HVAppDelegate.m; sourceTree = "<group>"; };
-		5981214E14F593DF003A7E9F /* HVNumberPadWithDoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneButton.h; sourceTree = "<group>"; };
-		5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNumberPadWithDoneButton.m; sourceTree = "<group>"; };
-		5981215014F593DF003A7E9F /* HVNumberPadWithDoneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNumberPadWithDoneDelegate.h; sourceTree = "<group>"; };
-		5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNumberPadWithDoneDelegate.m; sourceTree = "<group>"; };
 		5981215F14F613A2003A7E9F /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = UI/MainWindow.xib; sourceTree = "<group>"; };
 		5981216214F6196F003A7E9F /* HVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVMainViewController.h; path = Main/HVMainViewController.h; sourceTree = "<group>"; };
 		5981216314F6196F003A7E9F /* HVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVMainViewController.m; path = Main/HVMainViewController.m; sourceTree = "<group>"; };
 		5981216814F694A6003A7E9F /* HVNPwithDoneExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNPwithDoneExampleViewController.h; path = Components/HVNumberPadWithDone/HVNPwithDoneExampleViewController.h; sourceTree = SOURCE_ROOT; };
 		5981216914F694A6003A7E9F /* HVNPwithDoneExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNPwithDoneExampleViewController.m; path = Components/HVNumberPadWithDone/HVNPwithDoneExampleViewController.m; sourceTree = SOURCE_ROOT; };
 		5981216A14F694A6003A7E9F /* HVNPwithDoneExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HVNPwithDoneExampleViewController.xib; path = Components/HVNumberPadWithDone/HVNPwithDoneExampleViewController.xib; sourceTree = SOURCE_ROOT; };
+		59D6E34F14FD637A003EC963 /* HVNumberPadWithDoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumberPadWithDoneButton.h; path = Components/HVNumberPadWithDone/HVNumberPadWithDoneButton.h; sourceTree = SOURCE_ROOT; };
+		59D6E35014FD637A003EC963 /* HVNumberPadWithDoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumberPadWithDoneButton.m; path = Components/HVNumberPadWithDone/HVNumberPadWithDoneButton.m; sourceTree = SOURCE_ROOT; };
+		59D6E35114FD637A003EC963 /* HVNumberPadWithDoneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumberPadWithDoneDelegate.h; path = Components/HVNumberPadWithDone/HVNumberPadWithDoneDelegate.h; sourceTree = SOURCE_ROOT; };
+		59D6E35214FD637B003EC963 /* HVNumberPadWithDoneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumberPadWithDoneDelegate.m; path = Components/HVNumberPadWithDone/HVNumberPadWithDoneDelegate.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +119,10 @@
 		5981214D14F593DF003A7E9F /* HVNumberPadWithDone */ = {
 			isa = PBXGroup;
 			children = (
-				5981214E14F593DF003A7E9F /* HVNumberPadWithDoneButton.h */,
-				5981214F14F593DF003A7E9F /* HVNumberPadWithDoneButton.m */,
-				5981215014F593DF003A7E9F /* HVNumberPadWithDoneDelegate.h */,
-				5981215114F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m */,
+				59D6E34F14FD637A003EC963 /* HVNumberPadWithDoneButton.h */,
+				59D6E35014FD637A003EC963 /* HVNumberPadWithDoneButton.m */,
+				59D6E35114FD637A003EC963 /* HVNumberPadWithDoneDelegate.h */,
+				59D6E35214FD637B003EC963 /* HVNumberPadWithDoneDelegate.m */,
 				5981216814F694A6003A7E9F /* HVNPwithDoneExampleViewController.h */,
 				5981216914F694A6003A7E9F /* HVNPwithDoneExampleViewController.m */,
 			);
@@ -230,10 +230,10 @@
 			files = (
 				5981213C14F583EF003A7E9F /* main.m in Sources */,
 				5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */,
-				5981215214F593DF003A7E9F /* HVNumberPadWithDoneButton.m in Sources */,
-				5981215314F593DF003A7E9F /* HVNumberPadWithDoneDelegate.m in Sources */,
 				5981216414F6196F003A7E9F /* HVMainViewController.m in Sources */,
 				5981216B14F694A6003A7E9F /* HVNPwithDoneExampleViewController.m in Sources */,
+				59D6E35314FD637B003EC963 /* HVNumberPadWithDoneButton.m in Sources */,
+				59D6E35414FD637B003EC963 /* HVNumberPadWithDoneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
