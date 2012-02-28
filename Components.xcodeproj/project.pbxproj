@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59643F1414FD6C2D007B905B /* HVNFWithDoneExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F0F14FD6C2D007B905B /* HVNFWithDoneExampleViewController.m */; };
-		59643F1514FD6C2D007B905B /* HVNumericTextFieldWithButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F1114FD6C2D007B905B /* HVNumericTextFieldWithButton.m */; };
-		59643F1614FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F1314FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.m */; };
-		59643F1814FD6C39007B905B /* HVNFWithDoneExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59643F1714FD6C39007B905B /* HVNFWithDoneExample.xib */; };
+		59643F1A14FD6E57007B905B /* HVNFWithDoneExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59643F1914FD6E57007B905B /* HVNFWithDoneExample.xib */; };
+		59643F2114FD6E65007B905B /* HVNFWithDoneExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F1C14FD6E65007B905B /* HVNFWithDoneExampleViewController.m */; };
+		59643F2214FD6E65007B905B /* HVNumericTextFieldWithButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F1E14FD6E65007B905B /* HVNumericTextFieldWithButton.m */; };
+		59643F2314FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59643F2014FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m */; };
 		5981213014F583EF003A7E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981212F14F583EF003A7E9F /* UIKit.framework */; };
 		5981213214F583EF003A7E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981213114F583EF003A7E9F /* Foundation.framework */; };
 		5981213414F583EF003A7E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981213314F583EF003A7E9F /* CoreGraphics.framework */; };
@@ -22,13 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59643F0E14FD6C2D007B905B /* HVNFWithDoneExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNFWithDoneExampleViewController.h; path = Components/HVNumberTextFieldWithButton/HVNFWithDoneExampleViewController.h; sourceTree = SOURCE_ROOT; };
-		59643F0F14FD6C2D007B905B /* HVNFWithDoneExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNFWithDoneExampleViewController.m; path = Components/HVNumberTextFieldWithButton/HVNFWithDoneExampleViewController.m; sourceTree = SOURCE_ROOT; };
-		59643F1014FD6C2D007B905B /* HVNumericTextFieldWithButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumericTextFieldWithButton.h; path = Components/HVNumberTextFieldWithButton/HVNumericTextFieldWithButton.h; sourceTree = SOURCE_ROOT; };
-		59643F1114FD6C2D007B905B /* HVNumericTextFieldWithButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumericTextFieldWithButton.m; path = Components/HVNumberTextFieldWithButton/HVNumericTextFieldWithButton.m; sourceTree = SOURCE_ROOT; };
-		59643F1214FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumericTextFieldWithButtonDelegate.h; path = Components/HVNumberTextFieldWithButton/HVNumericTextFieldWithButtonDelegate.h; sourceTree = SOURCE_ROOT; };
-		59643F1314FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumericTextFieldWithButtonDelegate.m; path = Components/HVNumberTextFieldWithButton/HVNumericTextFieldWithButtonDelegate.m; sourceTree = SOURCE_ROOT; };
-		59643F1714FD6C39007B905B /* HVNFWithDoneExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HVNFWithDoneExample.xib; path = HVNumberTextFieldWithButton/HVNFWithDoneExample.xib; sourceTree = "<group>"; };
+		59643F1914FD6E57007B905B /* HVNFWithDoneExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HVNFWithDoneExample.xib; path = HVNumericTextFieldWithButton/HVNFWithDoneExample.xib; sourceTree = "<group>"; };
+		59643F1B14FD6E65007B905B /* HVNFWithDoneExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNFWithDoneExampleViewController.h; path = Components/HVNumericTextFieldWithButton/HVNFWithDoneExampleViewController.h; sourceTree = SOURCE_ROOT; };
+		59643F1C14FD6E65007B905B /* HVNFWithDoneExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNFWithDoneExampleViewController.m; path = Components/HVNumericTextFieldWithButton/HVNFWithDoneExampleViewController.m; sourceTree = SOURCE_ROOT; };
+		59643F1D14FD6E65007B905B /* HVNumericTextFieldWithButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumericTextFieldWithButton.h; path = Components/HVNumericTextFieldWithButton/HVNumericTextFieldWithButton.h; sourceTree = SOURCE_ROOT; };
+		59643F1E14FD6E65007B905B /* HVNumericTextFieldWithButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumericTextFieldWithButton.m; path = Components/HVNumericTextFieldWithButton/HVNumericTextFieldWithButton.m; sourceTree = SOURCE_ROOT; };
+		59643F1F14FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNumericTextFieldWithButtonDelegate.h; path = Components/HVNumericTextFieldWithButton/HVNumericTextFieldWithButtonDelegate.h; sourceTree = SOURCE_ROOT; };
+		59643F2014FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNumericTextFieldWithButtonDelegate.m; path = Components/HVNumericTextFieldWithButton/HVNumericTextFieldWithButtonDelegate.m; sourceTree = SOURCE_ROOT; };
 		5981212B14F583EF003A7E9F /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5981212F14F583EF003A7E9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5981213114F583EF003A7E9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,12 +119,12 @@
 		5981214D14F593DF003A7E9F /* HVNumericTextFieldWithButton */ = {
 			isa = PBXGroup;
 			children = (
-				59643F0E14FD6C2D007B905B /* HVNFWithDoneExampleViewController.h */,
-				59643F0F14FD6C2D007B905B /* HVNFWithDoneExampleViewController.m */,
-				59643F1014FD6C2D007B905B /* HVNumericTextFieldWithButton.h */,
-				59643F1114FD6C2D007B905B /* HVNumericTextFieldWithButton.m */,
-				59643F1214FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.h */,
-				59643F1314FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.m */,
+				59643F1B14FD6E65007B905B /* HVNFWithDoneExampleViewController.h */,
+				59643F1C14FD6E65007B905B /* HVNFWithDoneExampleViewController.m */,
+				59643F1D14FD6E65007B905B /* HVNumericTextFieldWithButton.h */,
+				59643F1E14FD6E65007B905B /* HVNumericTextFieldWithButton.m */,
+				59643F1F14FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.h */,
+				59643F2014FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m */,
 			);
 			name = HVNumericTextFieldWithButton;
 			path = HVNumberPadWithDone;
@@ -160,7 +160,7 @@
 		5981216514F693EB003A7E9F /* HVNumericTextFieldWithButton */ = {
 			isa = PBXGroup;
 			children = (
-				59643F1714FD6C39007B905B /* HVNFWithDoneExample.xib */,
+				59643F1914FD6E57007B905B /* HVNFWithDoneExample.xib */,
 			);
 			name = HVNumericTextFieldWithButton;
 			sourceTree = "<group>";
@@ -218,7 +218,7 @@
 			files = (
 				5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */,
 				5981216014F613A2003A7E9F /* MainWindow.xib in Resources */,
-				59643F1814FD6C39007B905B /* HVNFWithDoneExample.xib in Resources */,
+				59643F1A14FD6E57007B905B /* HVNFWithDoneExample.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +232,9 @@
 				5981213C14F583EF003A7E9F /* main.m in Sources */,
 				5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */,
 				5981216414F6196F003A7E9F /* HVMainViewController.m in Sources */,
-				59643F1414FD6C2D007B905B /* HVNFWithDoneExampleViewController.m in Sources */,
-				59643F1514FD6C2D007B905B /* HVNumericTextFieldWithButton.m in Sources */,
-				59643F1614FD6C2D007B905B /* HVNumericTextFieldWithButtonDelegate.m in Sources */,
+				59643F2114FD6E65007B905B /* HVNFWithDoneExampleViewController.m in Sources */,
+				59643F2214FD6E65007B905B /* HVNumericTextFieldWithButton.m in Sources */,
+				59643F2314FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
