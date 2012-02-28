@@ -31,6 +31,6 @@
 
 @property (nonatomic) UITextField *textField;
 
--(id) initWithTextfield:(UITextField*)tf;
+-(id) initWithTextfield:(UITextField*)tf text:(NSString*)txt;
 
 @end

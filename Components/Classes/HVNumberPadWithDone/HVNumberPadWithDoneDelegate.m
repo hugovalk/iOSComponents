@@ -21,9 +21,11 @@
 #pragma mark HVNumberPadWithDoneDelegate.m
 #import "HVNumberPadWithDoneDelegate.h"
 
-#pragma mark -
-#pragma mark Private methods
-@interface HVNumberPadWithDoneDelegate()
+#pragma mark - Private methods
+@interface HVNumberPadWithDoneDelegate() {
+    @private
+    NSString *text;
+}
 -(void) startAddingButton;
 -(void) addDoneButton;
 -(void) createDoneButton;
@@ -31,23 +33,22 @@
 @end
 
 
-#pragma mark -
-#pragma mark Implementation of HVNumberPadWithDoneDelegate
+#pragma mark - Implementation of HVNumberPadWithDoneDelegate
 @implementation HVNumberPadWithDoneDelegate
 
 @synthesize textField;
 
-#pragma mark -
-#pragma mark Initialize
--(id) initWithTextfield:(UITextField*)tf
+#pragma mark - Initialize
+-(id) initWithTextfield:(UITextField*)tf text:(NSString*)txt
 {
-	if (self = [super init]) 
+	if (self = [super init]) {
 		self.textField = tf;	
+        text = txt;
+    }
 	return self;
 }
 
-#pragma mark -
-#pragma mark Add Done button to number pad textField
+#pragma mark - Add Done button to number pad textField
 -(void) startAddingButton
 {
 	[self performSelectorOnMainThread:@selector(addDoneButton) withObject:nil waitUntilDone:YES];
@@ -64,35 +65,34 @@
 
 -(void) createDoneButton
 {
-	doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	// Initialize button.
+    doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	doneButton.frame = CGRectMake(0, 427, 106, 53);
 	doneButton.adjustsImageWhenHighlighted = NO;
-/*	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 3.0) {
-		[doneButton setImage:[UIImage imageNamed:@"DoneUp3.png"] forState:UIControlStateNormal];
-		[doneButton setImage:[UIImage imageNamed:@"DoneDown3.png"] forState:UIControlStateHighlighted];
-	} else {        
-		[doneButton setImage:[UIImage imageNamed:@"DoneUp.png"] forState:UIControlStateNormal];
-		[doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
-	}
-*/
-    [doneButton setTitleColor:[UIColor colorWithRed:0.30f green:0.33f blue:0.38f alpha:1.0f] forState:UIControlStateNormal];
-    [doneButton setTitle:@"Done" forState:UIControlStateNormal];
-    [doneButton setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [doneButton.titleLabel setShadowOffset:CGSizeMake(0.0f, 0.5f)];
 
-	[doneButton addTarget:self action:@selector(doneClicked:) forControlEvents:UIControlEventTouchUpInside];
+    // Set target for button.
+   	[doneButton addTarget:self action:@selector(doneClicked:) forControlEvents:UIControlEventTouchUpInside];
+
+    // Set colors for button text.
+    [doneButton setTitleColor:[UIColor colorWithRed:0.30f green:0.33f blue:0.38f alpha:1.0f] forState:UIControlStateNormal];
+    [doneButton setTitleShadowColor:[UIColor colorWithRed:0.88f green:0.89f blue:0.9f alpha:1.0f] forState:UIControlStateNormal];
+    [doneButton.titleLabel setShadowOffset:CGSizeMake(0.0f, 1.0f)];
+
+    // Set font for button text.
+    [doneButton.titleLabel setFont:[UIFont boldSystemFontOfSize:18.0f]];
+    
+    // Set text.
+    [doneButton setTitle:@"Done" forState:UIControlStateNormal];
 }
 
-#pragma mark -
-#pragma mark Handle Done button clicked event
+#pragma mark - Handle Done button clicked event
 -(void) doneClicked:(id)sender
 {
 	[doneButton removeFromSuperview];
 	[textField resignFirstResponder];
 }
 
-#pragma mark -
-#pragma mark UITextFieldDelegate
+#pragma mark - UITextFieldDelegate
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField
 {
 	[NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(startAddingButton) userInfo:nil repeats:NO];
@@ -108,8 +108,7 @@
 	[doneButton removeFromSuperview];
 }
 
-#pragma mark -
-#pragma mark Tear down
+#pragma mark - Tear down
 -(void)dealloc
 {
 	[doneButton removeFromSuperview];
