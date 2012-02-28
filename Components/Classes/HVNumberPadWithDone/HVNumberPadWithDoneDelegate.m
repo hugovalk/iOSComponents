@@ -105,7 +105,7 @@
 -(BOOL) textFieldShouldBeginEditing:(UITextField *)textField
 {
     [doneButton setTitle:[self buttonText] forState:UIControlStateNormal];
-	[NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(startAddingButton) userInfo:nil repeats:NO];
+	[NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(startAddingButton) userInfo:nil repeats:NO];
 	return YES;
 }
 
