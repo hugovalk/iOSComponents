@@ -13,20 +13,20 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
-//  HVNPwithDoneExampleViewController.m
+//  HVNFWithDoneExampleViewController.m
 //  Components
 //
 //  Created by Valk Hugo on 2/23/12.
 //
 
-#import "HVNPwithDoneExampleViewController.h"
-#import "HVNumberPadWithDoneDelegate.h"
+#import "HVNFWithDoneExampleViewController.h"
+#import "HVNumericTextFieldWithButtonDelegate.h"
 
-@interface HVNPwithDoneExampleViewController ()
+@interface HVNFWithDoneExampleViewController ()
 
 @end
 
-@implementation HVNPwithDoneExampleViewController
+@implementation HVNFWithDoneExampleViewController
 @synthesize example;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,7 +41,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.example setTitleText:@"My Text"];
+    [self.example setTitleText:@"Ready"];
 }
 
 - (void)viewDidUnload

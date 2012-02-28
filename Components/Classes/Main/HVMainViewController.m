@@ -20,7 +20,7 @@
 //
 
 #import "HVMainViewController.h"
-#import "HVNPwithDoneExampleViewController.h"
+#import "HVNFWithDoneExampleViewController.h"
 
 
 
@@ -87,7 +87,7 @@ enum ROWS {
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
-    cell.textLabel.text = @"HVNumberPadWithDone";
+    cell.textLabel.text = @"HVNumberTextFieldWithButton";
     return cell;
 }
 
@@ -136,7 +136,7 @@ enum ROWS {
 {
     // Navigation logic may go here. Create and push another view controller.
     
-     HVNPwithDoneExampleViewController *detailViewController = [[HVNPwithDoneExampleViewController alloc] initWithNibName:@"HVNPwithDoneExampleViewController" bundle:nil];
+     HVNFWithDoneExampleViewController *detailViewController = [[HVNFWithDoneExampleViewController alloc] initWithNibName:@"HVNFWithDoneExample" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];

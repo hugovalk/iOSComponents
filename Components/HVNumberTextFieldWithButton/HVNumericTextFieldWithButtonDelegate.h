@@ -13,19 +13,25 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
-//  HVNumberPadWithDoneButton.h
+//  HVNumericTextFieldWithButtonDelegate.h
+//  
 //
-//  Created by Hugo Valk on 12/20/10.
+//  Created by Hugo Valk on 8/9/10.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HVNumberPadWithDoneDelegate.h"
 
-@interface HVNumberPadWithDoneButton : UITextField {
+
+@interface HVNumericTextFieldWithButtonDelegate : NSObject <UITextFieldDelegate> {
 @private
-	HVNumberPadWithDoneDelegate *doneDelegate;
+	UIButton *doneButton;
+	UITextField* textField;
 }
 
-- (void)setTitleText:(NSString *)title;
+@property (strong, nonatomic) UITextField *textField;
+@property (strong, nonatomic) NSString *titleText;
+
+-(id) initWithTextfield:(UITextField*)tf;
 
 @end

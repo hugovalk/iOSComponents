@@ -13,18 +13,18 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
-//  HVNumberPadWithDoneButton.m
+//  HVNumericTextFieldWithButton.m
 //
 //  Created by Hugo Valk on 12/20/10.
 //
 
-#import "HVNumberPadWithDoneButton.h"
+#import "HVNumericTextFieldWithButton.h"
 
-@interface HVNumberPadWithDoneButton()
+@interface HVNumericTextFieldWithButton()
 - (void)initialize;
 @end
 
-@implementation HVNumberPadWithDoneButton
+@implementation HVNumericTextFieldWithButton
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -47,7 +47,7 @@
 {
     if (doneDelegate == nil) {
         self.keyboardType = UIKeyboardTypeNumberPad;
-        doneDelegate = [[HVNumberPadWithDoneDelegate alloc] initWithTextfield:self];
+        doneDelegate = [[HVNumericTextFieldWithButtonDelegate alloc] initWithTextfield:self];
         self.delegate = doneDelegate;
     }
 }

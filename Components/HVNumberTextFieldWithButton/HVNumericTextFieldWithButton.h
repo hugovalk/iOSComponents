@@ -13,17 +13,19 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
-//  HVNPwithDoneExampleViewController.h
-//  Components
+//  HVNumericTextFieldWithButton.h
 //
-//  Created by Valk Hugo on 2/23/12.
+//  Created by Hugo Valk on 12/20/10.
 //
 
 #import <UIKit/UIKit.h>
-#import "HVNumberPadWithDoneButton.h"
+#import "HVNumericTextFieldWithButtonDelegate.h"
 
-@interface HVNPwithDoneExampleViewController : UIViewController
+@interface HVNumericTextFieldWithButton : UITextField {
+@private
+	HVNumericTextFieldWithButtonDelegate *doneDelegate;
+}
 
-@property (strong, nonatomic) IBOutlet HVNumberPadWithDoneButton *example;
+- (void)setTitleText:(NSString *)title;
 
 @end

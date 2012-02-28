@@ -13,16 +13,16 @@
 //See the License for the specific language governing permissions and
 //limitations under the License.
 //
-//  HVNumberPadDelegate.m
+//  HVNumericTextFieldWithButtonDelegate.m
 //
 //  Created by Hugo Valk on 8/9/10.
 //
 
 #pragma mark HVNumberPadWithDoneDelegate.m
-#import "HVNumberPadWithDoneDelegate.h"
+#import "HVNumericTextFieldWithButtonDelegate.h"
 
 #pragma mark - Private methods
-@interface HVNumberPadWithDoneDelegate() {
+@interface HVNumericTextFieldWithButtonDelegate() {
     @private
     NSString *text;
 }
@@ -34,7 +34,7 @@
 
 
 #pragma mark - Implementation of HVNumberPadWithDoneDelegate
-@implementation HVNumberPadWithDoneDelegate
+@implementation HVNumericTextFieldWithButtonDelegate
 
 @synthesize textField;
 @synthesize titleText;
