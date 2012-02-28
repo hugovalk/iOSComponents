@@ -1,0 +1,13 @@
+HVNumericTextFieldWithButton
+
+This component is a textfield that can be used to input integer numbers. The corresponding keyboard is the standard numeric keyboard, except an extra 'Done' button is located in the lower left corner.
+
+This makes it easy for the user to dismiss the keyboard. 
+
+It can be used by including the files (not the .pxm files) in this folder into your project. Then you can use HVNumericTextFieldWithButton instead of a normal UITextField. An example is included where the textfield is configured in a IB file. 
+
+You can set the specific text of the 'Done' button by using the 
+- (void)setTitleText:(NSString *)title
+method on HVNumericTextFieldWithButton. 
+
+The delegate that comes with this component is configured by the textfield itself and does not need to be modified. 
