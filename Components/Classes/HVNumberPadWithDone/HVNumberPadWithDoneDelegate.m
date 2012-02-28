@@ -17,6 +17,7 @@
 //
 //  Created by Hugo Valk on 8/9/10.
 //
+
 #pragma mark HVNumberPadWithDoneDelegate.m
 #import "HVNumberPadWithDoneDelegate.h"
 
@@ -66,13 +67,19 @@
 	doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	doneButton.frame = CGRectMake(0, 427, 106, 53);
 	doneButton.adjustsImageWhenHighlighted = NO;
-	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 3.0) {
+/*	if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 3.0) {
 		[doneButton setImage:[UIImage imageNamed:@"DoneUp3.png"] forState:UIControlStateNormal];
 		[doneButton setImage:[UIImage imageNamed:@"DoneDown3.png"] forState:UIControlStateHighlighted];
 	} else {        
 		[doneButton setImage:[UIImage imageNamed:@"DoneUp.png"] forState:UIControlStateNormal];
 		[doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
 	}
+*/
+    [doneButton setTitleColor:[UIColor colorWithRed:0.30f green:0.33f blue:0.38f alpha:1.0f] forState:UIControlStateNormal];
+    [doneButton setTitle:@"Done" forState:UIControlStateNormal];
+    [doneButton setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [doneButton.titleLabel setShadowOffset:CGSizeMake(0.0f, 0.5f)];
+
 	[doneButton addTarget:self action:@selector(doneClicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
