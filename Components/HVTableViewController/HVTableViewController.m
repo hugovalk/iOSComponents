@@ -1,44 +1,18 @@
 //
-//Copyright 2012 Hugo Valk (http://www.hugovalk.nl)
-//
-//Licensed under the Apache License, Version 2.0 (the "License");
-//you may not use this file except in compliance with the License.
-//You may obtain a copy of the License at
-//
-//http://www.apache.org/licenses/LICENSE-2.0
-//
-//Unless required by applicable law or agreed to in writing, software
-//distributed under the License is distributed on an "AS IS" BASIS,
-//WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//See the License for the specific language governing permissions and
-//limitations under the License.
-//
-//  HVMainViewController.m
+//  HVTableViewController.m
 //  Components
 //
-//  Created by Valk Hugo on 2/23/12.
+//  Created by Valk Hugo on 3/30/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "HVMainViewController.h"
-#import "HVNFWithDoneExampleViewController.h"
 #import "HVTableViewController.h"
 
-
-
-enum ROWS {
-    NUMBER_PAD_DONE_BUTTON,
-    HV_TABLE_VIEW,
-    NUMBER_OF_ROWS
-};
-
-@interface HVMainViewController () {
-    @private
-    NSArray *titles;
-}
+@interface HVTableViewController ()
 
 @end
 
-@implementation HVMainViewController
+@implementation HVTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -52,9 +26,12 @@ enum ROWS {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    titles = [NSArray arrayWithObjects:@"HVNumberTextFieldWithButton",
-              @"HVTableViewController",
-              nil];
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -73,23 +50,25 @@ enum ROWS {
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return NUMBER_OF_ROWS;
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
-    cell.textLabel.text = [titles objectAtIndex:indexPath.row];
+    
+    // Configure the cell...
+    
     return cell;
 }
 
@@ -136,21 +115,13 @@ enum ROWS {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *detailViewController = nil;
-    switch (indexPath.row) {
-        case NUMBER_PAD_DONE_BUTTON:
-            detailViewController = [[HVNFWithDoneExampleViewController alloc] initWithNibName:@"HVNFWithDoneExample" bundle:nil];
-            break;
-        case HV_TABLE_VIEW:
-            detailViewController = [[HVTableViewController alloc] initWithNibName:@"HVTableViewController" bundle:nil];
-        default:
-            break;
-    }
-
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
-     
+     */
 }
 
 @end
