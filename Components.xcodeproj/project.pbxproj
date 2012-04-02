@@ -15,14 +15,14 @@
 		5981213414F583EF003A7E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5981213314F583EF003A7E9F /* CoreGraphics.framework */; };
 		5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5981213814F583EF003A7E9F /* InfoPlist.strings */; };
 		5981213C14F583EF003A7E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213B14F583EF003A7E9F /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981213F14F583EF003A7E9F /* HVAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5981216014F613A2003A7E9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5981215F14F613A2003A7E9F /* MainWindow.xib */; };
-		5981216414F6196F003A7E9F /* HVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981216314F6196F003A7E9F /* HVMainViewController.m */; };
 		59CD6950152646D600C3EC76 /* HVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CD694E152646D600C3EC76 /* HVTableViewController.m */; };
 		59CD6951152646D600C3EC76 /* HVTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59CD694F152646D600C3EC76 /* HVTableViewController.xib */; };
 		59CD69551526477400C3EC76 /* HVNFWithDoneExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59CD69541526477400C3EC76 /* HVNFWithDoneExample.xib */; };
 		59CD69571526478700C3EC76 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 59CD69561526478700C3EC76 /* README */; };
 		59CD6959152647A100C3EC76 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 59CD6958152647A100C3EC76 /* README */; };
+		59F541C6152A3165009EE123 /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F541C2152A3165009EE123 /* HVAppDelegate.m */; };
+		59F541C7152A3165009EE123 /* HVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F541C4152A3165009EE123 /* HVMainViewController.m */; };
+		59F541C8152A3165009EE123 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F541C5152A3165009EE123 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,17 +40,17 @@
 		5981213914F583EF003A7E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5981213B14F583EF003A7E9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5981213D14F583EF003A7E9F /* Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Components-Prefix.pch"; sourceTree = "<group>"; };
-		5981213E14F583EF003A7E9F /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HVAppDelegate.h; path = ../HVAppDelegate.h; sourceTree = "<group>"; };
-		5981213F14F583EF003A7E9F /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HVAppDelegate.m; path = ../HVAppDelegate.m; sourceTree = "<group>"; };
-		5981215F14F613A2003A7E9F /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = UI/MainWindow.xib; sourceTree = "<group>"; };
-		5981216214F6196F003A7E9F /* HVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVMainViewController.h; path = Main/HVMainViewController.h; sourceTree = "<group>"; };
-		5981216314F6196F003A7E9F /* HVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVMainViewController.m; path = Main/HVMainViewController.m; sourceTree = "<group>"; };
 		59CD694D152646D600C3EC76 /* HVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVTableViewController.h; path = Components/HVTableViewController/HVTableViewController.h; sourceTree = SOURCE_ROOT; };
 		59CD694E152646D600C3EC76 /* HVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVTableViewController.m; path = Components/HVTableViewController/HVTableViewController.m; sourceTree = SOURCE_ROOT; };
 		59CD694F152646D600C3EC76 /* HVTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HVTableViewController.xib; path = Components/HVTableViewController/HVTableViewController.xib; sourceTree = SOURCE_ROOT; };
 		59CD69541526477400C3EC76 /* HVNFWithDoneExample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HVNFWithDoneExample.xib; path = Components/HVNumericTextFieldWithButton/HVNFWithDoneExample.xib; sourceTree = SOURCE_ROOT; };
 		59CD69561526478700C3EC76 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = Components/HVNumericTextFieldWithButton/README; sourceTree = SOURCE_ROOT; };
 		59CD6958152647A100C3EC76 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		59F541C1152A3165009EE123 /* HVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
+		59F541C2152A3165009EE123 /* HVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		59F541C3152A3165009EE123 /* HVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVMainViewController.h; sourceTree = "<group>"; };
+		59F541C4152A3165009EE123 /* HVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVMainViewController.m; sourceTree = "<group>"; };
+		59F541C5152A3165009EE123 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +97,9 @@
 		5981213514F583EF003A7E9F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				59F541C0152A3165009EE123 /* Main */,
 				59CD69531526474700C3EC76 /* HVTableView */,
 				5981214D14F593DF003A7E9F /* HVNumericTextFieldWithButton */,
-				5981215E14F6134F003A7E9F /* UI */,
-				5981215414F593F0003A7E9F /* Resources */,
-				5981214C14F593DF003A7E9F /* Classes */,
 				5981213614F583EF003A7E9F /* Supporting Files */,
 			);
 			path = Components;
@@ -116,14 +114,6 @@
 				5981213D14F583EF003A7E9F /* Components-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5981214C14F593DF003A7E9F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5981216114F61407003A7E9F /* Main */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		5981214D14F593DF003A7E9F /* HVNumericTextFieldWithButton */ = {
@@ -142,32 +132,6 @@
 			path = Classes/HVNumberPadWithDone;
 			sourceTree = "<group>";
 		};
-		5981215414F593F0003A7E9F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5981215E14F6134F003A7E9F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				5981215F14F613A2003A7E9F /* MainWindow.xib */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		5981216114F61407003A7E9F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				5981213E14F583EF003A7E9F /* HVAppDelegate.h */,
-				5981213F14F583EF003A7E9F /* HVAppDelegate.m */,
-				5981216214F6196F003A7E9F /* HVMainViewController.h */,
-				5981216314F6196F003A7E9F /* HVMainViewController.m */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
 		59CD69531526474700C3EC76 /* HVTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +141,18 @@
 				59CD6958152647A100C3EC76 /* README */,
 			);
 			name = HVTableView;
+			sourceTree = "<group>";
+		};
+		59F541C0152A3165009EE123 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				59F541C1152A3165009EE123 /* HVAppDelegate.h */,
+				59F541C2152A3165009EE123 /* HVAppDelegate.m */,
+				59F541C3152A3165009EE123 /* HVMainViewController.h */,
+				59F541C4152A3165009EE123 /* HVMainViewController.m */,
+				59F541C5152A3165009EE123 /* MainWindow.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5981213A14F583EF003A7E9F /* InfoPlist.strings in Resources */,
-				5981216014F613A2003A7E9F /* MainWindow.xib in Resources */,
 				59CD6951152646D600C3EC76 /* HVTableViewController.xib in Resources */,
 				59CD69551526477400C3EC76 /* HVNFWithDoneExample.xib in Resources */,
 				59CD69571526478700C3EC76 /* README in Resources */,
 				59CD6959152647A100C3EC76 /* README in Resources */,
+				59F541C8152A3165009EE123 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5981213C14F583EF003A7E9F /* main.m in Sources */,
-				5981214014F583EF003A7E9F /* HVAppDelegate.m in Sources */,
-				5981216414F6196F003A7E9F /* HVMainViewController.m in Sources */,
 				59643F2114FD6E65007B905B /* HVNFWithDoneExampleViewController.m in Sources */,
 				59643F2214FD6E65007B905B /* HVNumericTextFieldWithButton.m in Sources */,
 				59643F2314FD6E65007B905B /* HVNumericTextFieldWithButtonDelegate.m in Sources */,
 				59CD6950152646D600C3EC76 /* HVTableViewController.m in Sources */,
+				59F541C6152A3165009EE123 /* HVAppDelegate.m in Sources */,
+				59F541C7152A3165009EE123 /* HVMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
