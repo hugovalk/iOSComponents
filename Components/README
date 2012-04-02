@@ -1,1 +1,7 @@
 HVTableView
+
+This component is a tableview with a few custom animations to show the cell details. 
+
+It can be used by:
+    ....
+    
