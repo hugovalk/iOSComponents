@@ -23,6 +23,7 @@
 		59F541C6152A3165009EE123 /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F541C2152A3165009EE123 /* HVAppDelegate.m */; };
 		59F541C7152A3165009EE123 /* HVMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F541C4152A3165009EE123 /* HVMainViewController.m */; };
 		59F541C8152A3165009EE123 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F541C5152A3165009EE123 /* MainWindow.xib */; };
+		59F541CC152B90B3009EE123 /* HVNeuron.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F541CB152B90B3009EE123 /* HVNeuron.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		59F541C3152A3165009EE123 /* HVMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVMainViewController.h; sourceTree = "<group>"; };
 		59F541C4152A3165009EE123 /* HVMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVMainViewController.m; sourceTree = "<group>"; };
 		59F541C5152A3165009EE123 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		59F541CA152B90B3009EE123 /* HVNeuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVNeuron.h; path = HVNeuralNet/HVNeuron.h; sourceTree = "<group>"; };
+		59F541CB152B90B3009EE123 /* HVNeuron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVNeuron.m; path = HVNeuralNet/HVNeuron.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		5981213514F583EF003A7E9F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				59F541C9152A3625009EE123 /* HVNeuralNet */,
 				59F541C0152A3165009EE123 /* Main */,
 				59CD69531526474700C3EC76 /* HVTableView */,
 				5981214D14F593DF003A7E9F /* HVNumericTextFieldWithButton */,
@@ -153,6 +157,15 @@
 				59F541C5152A3165009EE123 /* MainWindow.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		59F541C9152A3625009EE123 /* HVNeuralNet */ = {
+			isa = PBXGroup;
+			children = (
+				59F541CA152B90B3009EE123 /* HVNeuron.h */,
+				59F541CB152B90B3009EE123 /* HVNeuron.m */,
+			);
+			name = HVNeuralNet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +242,7 @@
 				59CD6950152646D600C3EC76 /* HVTableViewController.m in Sources */,
 				59F541C6152A3165009EE123 /* HVAppDelegate.m in Sources */,
 				59F541C7152A3165009EE123 /* HVMainViewController.m in Sources */,
+				59F541CC152B90B3009EE123 /* HVNeuron.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
